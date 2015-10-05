@@ -38,3 +38,8 @@ Can you remember what each of the following does of the top of your head? Write 
 
 -help - shows a list of commands: to find more information about something on the list, you can type “help [command]”
 ## 1.4 Forking and Cloning
+We have learned two ways to get a repository into your GitHub: create and fork. Creating a repository makes an empty repository in your account. You can do this in the GitHub user interface. Clicking the plus sign next to your avatar will pull up a drop-down menu from which you can select “new repository.” After you click this, you will be taken to a screen where you can name the repository and select its privacy settings and licenses, etc. Clicking “Create repository” will make a new repository.
+
+If you want to make a copy of an extant repository to view or edit in your own account, you can “fork” the repository. To do this, first go to the menu bar at the top right and click “fork,” then click in the dialogue window on the account that you want to fork the repository to. A copy of that repository now exists in the destination account on GitHub! To save this to your own computer, you can clone it by copying the clone URL found along the right side of the page under “HTTPS clone URL”, and then opening your shell and typing “git clone [paste clone URL here]”. The repository has now been saved to your computer.
+
+I haven’t run into any problems following the instructions yet, but I’d like to get more familiar toggling between the graphic interface and the command line.
