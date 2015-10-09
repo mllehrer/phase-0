@@ -47,7 +47,7 @@
 ##What is user experience design and why is it valuable?
  - UX design is making sure the the user interacts with the product in a way that is pleasing for them. It involves usability -- is the website easy to navigate? Do the links work? Does the site's design help or interfere with the performance? (e.g. an attractive e-commerce site is useless if the shoppers can't figure out how to pay for their shopping cart) as well as aesthetics - does the intended audience like this color scheme? Does it display well on mobile? A product should be accessible and pleasant to use. Audience must always be taken into account.
  - UX design is valuable because whatever the purpose of the website--whether to sell things, provide information, or gather data--a website that is appealing to its audience will always outperform a competing website of similar content with worse design.
- (This doesn't always mean "not ugly"--Craigslist is very popular, despite having almost no apparent design, because its interface works well for its users. A similarly ugly site or even a pretty site that is difficult to post on or navigate would not do so well.)
+ (This doesn't always mean "not ugly"--Craigslist is very popular, despite having almost no apparent design, because its interface works well for its users, not to mention it's free. A similarly ugly site or even a pretty site that is difficult to post on or navigate would not do so well.)
 
 ##Which parts of the challenge did you find tedious?
 I'm still having a slow time with going back and forth between git on my computer and Github, but I'm getting better with practice.
