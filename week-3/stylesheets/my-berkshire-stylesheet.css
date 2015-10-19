@@ -1,0 +1,76 @@
+* {
+    color: navy;
+    background-color: white;
+}
+
+header {
+    text-align: center;
+    font-weight: bold;
+    border-bottom: 1px solid black;
+ }
+
+.lines-2-3 {
+    font-size: 15px;
+}
+
+.line-4 {
+    font-size: 20px;
+    margin-bottom: 20px;
+}
+
+a {
+    color: purple;
+}
+
+a:visited {
+    color: red;
+
+}
+
+nav {
+    column-count: 2;
+    -webkit-column-count: 2;
+    -moz-column-count: 2;
+    border-bottom: 1px solid black;
+}
+
+p {
+    font-size: 10px
+}
+
+span {
+    font-size: 30px;
+}
+
+article {
+    border-top: 1px solid black;
+    border-bottom: 1px solid black;
+}
+footer {
+    border-top: 1px solid black;
+}
+
+#inc {
+    font-size: 15px;
+}
+/*What is important to know when linking an external file (like a stylesheet) to an HTML file?
+
+The location and name of the file, what kind of file it is, etc. Link + tab autocompletes that tag.
+
+What tricks did you use to help you with positioning? How hard was it to get the site as you wanted it?
+
+Using semantic elements helps a lot, because many of them have position information information implied or built in; e.g. headers, footers, columns.
+Thinking about margins and borders is important.
+
+What CSS did you use to modify the element style (like size, color, etc.)
+
+We used the universal selector to make all the text navy and the background color white. Anything that deviated from the universal selector (link color, for instance) was modified by class.
+
+Did you modify the HTML to include classes or ids? If so, which did you chose and why? If you didn't, how would you know which one to add to your HTML?
+
+We used classes and ids. We used a class and an id in the header; we used an id for the "INC" because the text size is unique to that element. We used classes for the other fonts in the header to prevent redundancy. We also used classes for the link descriptions because they were a separate element that does not have a defined semantic tag.
+
+When you compared your site to the actual code base, which do you think had cleaner code that followed best practices and why?
+
+As far as we can tell, the original site does not use CSS. All formatting is done in html. CSS is best practice because a good site is dynamic and changes based on client or user demands. Making changes is simpler using CSS because it's possible to make a class-wide change instead of editing everything individually.
+*/
