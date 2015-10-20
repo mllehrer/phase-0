@@ -1,0 +1,57 @@
+body {
+    background-color: gray;
+        font-family: 'Slabo 27px', serif;
+}
+
+a {
+    color: darkslategray;
+}
+
+a: visited {
+    color: #7E354D;
+
+}
+a:hover {
+    color: #347D65;
+}
+header {
+    padding: 5px;
+    background-color: black;
+    border: 5px solid white;
+    color: white;
+    text-align: center;
+    width: 100%;
+
+}
+
+.column-1 {
+   background-color: blanchedalmond;
+   width: 48%;
+   display: inline-block;
+   vertical-align: top;
+    padding: 5px;
+    height: 30%;
+    border-left: 5px dotted white;
+    border-right: 5px dotted white;
+}
+
+.column-2 {
+    background-color: blanchedalmond;
+    width: 48%;
+    display: inline-block;
+    vertical-align: top;
+    padding: 5px 5px 0px -1px;
+    border-left: 5px dotted white;
+    border-right: 5px dotted white;
+    position: absolute;
+    right: 0;
+
+}
+
+footer {
+    background-color: slategray;
+    border: 5px solid white;
+    text-align: center;
+    width: 100%;
+}
+
