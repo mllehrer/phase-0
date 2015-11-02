@@ -61,7 +61,7 @@ end
 #
 
 
-# Person 4
+# Person 4 (Malia Lehrer)
 def my_array_deletion_method!(source, thing_to_delete)
   source.delete_if { |e| e.to_s.include?(thing_to_delete) }
   p source
@@ -73,9 +73,16 @@ def my_hash_deletion_method!(source, thing_to_delete)
 end
 
 # Identify and describe the Ruby method(s) you implemented.
-#For the array method I used delete_if? and .include?. Delete_if uses a block to determine what should be removed from the array, and in that block I turned all the elements to strings so they could be checked and then used .include to check all the strings for the offending character and let the method know which ones to remove.
-#For the hash method I also used delete_if. This one was simpler because the block was just comparing the key in the hash to the one passed to it.
-#I want to note that I told it to p source because these methods are destructive, so they array and hash would be permanently altered, but by themselves the methods return the deleted value, so you have to specify that you want the method to return the result of deleting the value instead.
+# For the array method I used delete_if? and .include?. Delete_if uses a block
+# to determine what should be removed from the array, and in that block I turned all 
+# the elements to strings so they could be checked and then used .include to check all 
+# the strings for the offending character and let the method know which ones to remove.
+# For the hash method I also used delete_if. This one was simpler because the block was 
+# just comparing the key in the hash to the one passed to it.
+# I want to note that I told it to p source because these methods are destructive, so the
+# array and hash would be permanently altered, but by themselves the methods return the '
+# deleted value, so you have to specify that you want the method to return the result of 
+# deleting the value instead.
 
 
 # Person 5 (Jon Clayton)
@@ -84,7 +91,7 @@ def my_array_splitting_method(source)
 end
 
 def my_hash_splitting_method(source, age)
-    p source.to_a.partition{|element| element[1] <= age}
+  source.to_a.partition{|element| element[1] <= age}
 end
 
 # Identify and describe the Ruby method(s) you implemented.
@@ -167,18 +174,30 @@ end
 # Release 2: Teach Others
 
 # 1. Identify and describe the Ruby method(s) you implemented.
-# The methods that I used were delete_if, to_s, and .include for the array, and delete_if for hashes. Delete_if uses a block to determine what to remove from the source. The block that I passed to delete_if for the array turned all the elements into strings (nondestructively) using to_s, because the .include method can be used with strings but not with integers. .include checks to see which strings include the string passed to it. Delete_if will then remove the strings that .include finds. For the hash, I used the block to compare each key in the hash to the key that needed to be removed. Delete_if then removes the ones that return true.
+#   The methods that I used were delete_if, to_s, and .include for the array, 
+#   and delete_if for hashes. Delete_if uses a block to determine what to remove 
+#   from the source. The block that I passed to delete_if for the array turned all 
+#   the elements into strings (nondestructively) using to_s, because the .include 
+#   method can be used with strings but not with integers. .include checks to see which 
+#   strings include the string passed to it. Delete_if will then remove the strings that 
+#   .include finds. For the hash, I used the block to compare each key in the hash to the 
+#   key that needed to be removed. Delete_if then removes the ones that return true.
 
-#To get the required result from both of these methods I had to make sure to specify what the method was returning. Delete_if is destructive, so it will permanently alter the source, but it won't return the source unless you it to. Instead, it returns the deleted value, which is not what we want.
+#   To get the required result from both of these methods I had to make sure to specify 
+#   what the method was returning. Delete_if is destructive, so it will permanently alter
+#   the source, but it won't return the source unless you it to. Instead, it returns the 
+#   deleted value, which is not what we want.
 
 # 2. Teach your accountability group how to use the methods
 #   .delete_if can be called on any hash or array. It takes a block, so the full thing looks like:
-#source.delete_if
-#{|key_or_element| key_or_element.does_or_is_this_thing}
-#It should be kept in mind what I mentioned above: delete_if will remove what you want it to remove, but then it returns that, so make sure to specify that you want the changed array removed.
+#       source.delete_if #{|key_or_element| key_or_element.does_or_is_this_thing}
+#   It should be kept in mind what I mentioned above: delete_if will remove what you want it to 
+#   remove, but then it returns that, so make sure to specify that you want the changed array removed.
 
 # 3. Share any tricks you used to find and decipher the Ruby Docs
-# I'm a ctrl+f'er, too, Shawn! I'll go into the section I know I need to look through and then search for keywords. I usually have an idea of how ruby "talks" so sometimes I can land on the method just by searching for what I want it to do. That was how I found include right away.
+#   I'm a ctrl+f'er, too, Shawn! I'll go into the section I know I need to look through and then 
+#   search for keywords. I usually have an idea of how ruby "talks" so sometimes I can land on the 
+#   method just by searching for what I want it to do. That was how I found include right away.
 
 #--------------------------------------------------------------------
 # Person 5: Jon Clayton
