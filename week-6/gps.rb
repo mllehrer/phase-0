@@ -75,3 +75,11 @@ p serving_size_calc("cookie", 10)
 # p serving_size_calc("THIS IS AN ERROR", 5)
 
 #  Reflection
+#What did you learn about making code readable by working on this challenge?
+#Variable names matter! Having descriptive variable names makes it a lot easier for someone else to come in and work on your code.
+#Did you learn any new methods? What did you learn about them?
+#I think has_key? was the only new method, and it's another one of those methods that does exactly what it says on the tin. This was my first time iterating through a hash, using |k, v|, too.
+#What did you learn about accessing data in hashes?
+#There are a bunch of different ways to do it! The trick is getting out the data that you want.
+#What concepts were solidified when working through this challenge?
+#I hadn't worked much with hashes before. I think I have a much more solid sense of how to iterate through them than I did when I started this challenge.
