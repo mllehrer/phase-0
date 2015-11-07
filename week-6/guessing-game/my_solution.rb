@@ -6,9 +6,19 @@
 
 # Pseudocode
 
-# Input:
-# Output:
+# Input: An integer
+# Output: A response, dependent on that integer
 # Steps:
+#Identify the answer for the whole class
+#Define a method to respond to the guess
+#Identify the guess for the whole class
+#Respond If the guess is too high with ":high"
+#Respond If the guess is too low with ":low"
+#Respond If the guess is correct with ":correct"
+#Define a boolean for the guess
+#If the guess is true, return true
+#Else, return false
+
 
 
 # Initial Solution
