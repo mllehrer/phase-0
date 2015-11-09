@@ -35,16 +35,37 @@ class BingoBoard
 
   def initialize(board)
     @bingo_board = board
-    @board_hash = {}
     @letters = ["B","I","N","G","O"]
   end
 
   def call
     i = rand(4)
     x = rand(4)
-p "#{@letters[i]}#{@bingo_board[i][x]}"
+    @current_row = @bingo_board[i]
+    @current_call = @bingo_board[i][x]
+
+ @letters[i]
+ @current_call
 end
 
+def check
+ @current_row.map! { |e| if e == @current_call
+    e = "X"
+  else
+    e = e
+  end
+ }
+  print @bingo_board[0]
+  print "\n"
+  print @bingo_board[1]
+  print "\n"
+  print @bingo_board[2]
+  print "\n"
+  print @bingo_board[3]
+  print "\n"
+  print @bingo_board[4]
+  print "\n"
+end
 end
 
 # Refactored Solution
@@ -60,7 +81,16 @@ board = [[47, 44, 71, 8, 88],
 
 new_game = BingoBoard.new(board)
 new_game.call
+new_game.check
 
 
 #Reflection
+
+# How difficult was pseudocoding this challenge? What do you think of your pseudocoding style?
+# What are the benefits of using a class for this challenge?
+# How can you access coordinates in a nested array?
+# What methods did you use to access and modify the array?
+# Give an example of a new method you learned while reviewing the Ruby docs. Based on what you see in the docs, what purpose does it serve, and how is it called?
+# How did you determine what should be an instance variable versus a local variable?
+# What do you feel is most improved in your refactored solution?
 
