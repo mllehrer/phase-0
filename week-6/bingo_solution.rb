@@ -40,11 +40,9 @@ class BingoBoard
   end
 
   def call
-    i = 0
-    until i == 4
-      i += 1
-  @board_hash = Hash[@bingo_board.map {|x| [@letters[i], x]}]
-end
+    i = rand(4)
+    x = rand(4)
+p "#{@letters[i]}#{@bingo_board[i][x]}"
 end
 
 end
