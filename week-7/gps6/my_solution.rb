@@ -1,6 +1,6 @@
 # Virus Predictor
 
-# I worked on this challenge [by myself, with: ].
+# I worked on this challenge [by myself, guide Caitlyn Yu].
 # We spent [#] hours on this challenge.
 
 # EXPLANATION OF require_relative
@@ -8,22 +8,26 @@
 #
 require_relative 'state_data'
 
-class VirusPredictor
+#This file needs a state_data file and state_data needs to be in the same directory. If you changed it to require you would need a full path. It's required relative to the file we're in. Require and require_relative check to see if you've loaded that file. "Load" continues to reload each time the data is called for.
 
+class VirusPredictor
+  #set up our instance variables for the class for this particular instance of the class
   def initialize(state_of_origin, population_density, population)
     @state = state_of_origin
     @population = population
     @population_density = population_density
   end
+#Uses data initialized to run two private methods (below)
 
   def virus_effects
-    predicted_deaths(@population_density, @population, @state)
-    speed_of_spread(@population_density, @state)
+    predicted_deaths
+    speed_of_spread
   end
 
-  private
+private
 
-  def predicted_deaths(population_density, population, state)
+#using the population density and population for this instance to calculate predicted deaths based on this algorithm
+  def predicted_deaths
     # predicted deaths is solely based on population density
     if @population_density >= 200
       number_of_deaths = (@population * 0.4).floor
@@ -40,8 +44,8 @@ class VirusPredictor
     print "#{@state} will lose #{number_of_deaths} people in this outbreak"
 
   end
-
-  def speed_of_spread(population_density, state) #in months
+#This one is only using population density and another algorithm to calculate the speed with which the virus will spread in this instance.
+  def speed_of_spread #in months
     # We are still perfecting our formula here. The speed is also affected
     # by additional factors we haven't added into this functionality.
     speed = 0.0
@@ -62,6 +66,7 @@ class VirusPredictor
 
   end
 
+
 end
 
 #=======================================================================
@@ -70,17 +75,10 @@ end
  # initialize VirusPredictor for each state
 
 
-alabama = VirusPredictor.new("Alabama", STATE_DATA["Alabama"][:population_density], STATE_DATA["Alabama"][:population])
-alabama.virus_effects
-
-jersey = VirusPredictor.new("New Jersey", STATE_DATA["New Jersey"][:population_density], STATE_DATA["New Jersey"][:population])
-jersey.virus_effects
-
-california = VirusPredictor.new("California", STATE_DATA["California"][:population_density], STATE_DATA["California"][:population])
-california.virus_effects
-
-alaska = VirusPredictor.new("Alaska", STATE_DATA["Alaska"][:population_density], STATE_DATA["Alaska"][:population])
-alaska.virus_effects
+STATE_DATA.each do |state, info|
+  current_state = VirusPredictor.new(state, info[:population_density], info[:population])
+  current_state.virus_effects
+end
 
 
 #=======================================================================
