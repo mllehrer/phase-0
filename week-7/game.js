@@ -15,7 +15,7 @@
 //Write an adventure that can be run in the console
 //
 //
-
+//
 // Initial Code
 
 alert("You are flying through space, and have been for some time. Through the windows of your spacecraft, the stars, which had been a blur as you whirred through the cosmos at hyperspeed, have begun to resolve into the wash of glitter that has been your only sky for five years. You are slowing down, planning to enter the orbit of an earthlike planet that has been your destination: it is humanity's only hope for a new world.");
