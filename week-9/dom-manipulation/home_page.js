@@ -1,7 +1,7 @@
 // DOM Manipulation Challenge
 
 
-// I worked on this challenge [by myself, with: ].
+// I worked on this challenge with Jess Richardson.
 
 
 // Add your JavaScript calls to this page:
@@ -18,21 +18,24 @@ document.getElementById("release-1").style.display = "none";
 
 
 // Release 2:
-document.getElementById("release-3").style.backgroundColor = #955251;
+document.getElementById("release-3").style.backgroundColor = "#955251";
 
 
 
 
 // Release 3:
+document.getElementsByTagName('h1')[0].innerHTML = "I completed release 2";
 
 
 
 
 // Release 4:
-document.getElementsByClassName("release-4").style.fontSize = "2em";
-
-
+var txt = document.getElementsByClassName('release-4');
+for(var i = 0; i < txt.length; i++){
+txt[i].style.fontSize = '2em';
+}
 
 // Release 5:
-document.getElementById("hidden").style.visibility = "visible";
+var template1 = document.getElementById('tmpl');
+document.body.appendChild(template1.content.cloneNode(true));
 
